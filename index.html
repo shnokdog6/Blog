@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-layout">
+        <nav>         
+            <p class="header">beyondray</p>
+            <ul class="panel-list">
+                <li>Главная</li>
+                <li>Обо мне</li>
+                <li>Навыки</li>
+            </ul>
+            <div class="links">
+                <a href="#"><img src="images/vk.png"/></a>
+                <a href="#"><img src="images/youtube.png"/></a>
+                <a href="#"><img src="images/telegram.png"/></a>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="description">
+                <span class="hello-text">Шалом</span>
+                <h1>Он ебал <span class="multiText"></span></h1>
+            </div>
+            <div class="background">
+                <div class="imgbox">
+                    <img src="images/me.png" id="photo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script>
+        var typeEffect = new Typed(".multiText", {
+            strings: ["рэп", "осла", "и твою мать"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500
+        })
+    </script>
+</body>
+</html>
